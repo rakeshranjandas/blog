@@ -167,12 +167,14 @@ We can calculate in which column the next available place would be by using the 
 Say you are at m2, and you are testing for t = 5
 After placing 4 cells, which column will be you next available place?
 
-It will be (2+4)%5 = m1
+It will be (2+4)%5 = 1
 
 
 c[i] m0 m1 m2 m3 m4
 c0   x  x  o  o  o
 c1   o  ^
+
+	m1, of c1 row, has the next available place
 
 ```
 
@@ -216,7 +218,7 @@ A running time that definitely won' t work is when we try to run the computers m
 
 Binary search is to be performed on the range \[0, sum_of_batteries +1\].
 
-Time complexity of the binary search = O(log sum_of_batteries)
+*Time complexity of the binary search* = O(log sum_of_batteries)
 
 ###### Complexity
 *Total time complexity of binary search with check function*	= O(batteries.length * log sum_of_batteries) 
