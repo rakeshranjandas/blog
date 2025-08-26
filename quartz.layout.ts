@@ -45,6 +45,7 @@ export const defaultContentPageLayout: PageLayout = {
       title: "Latest Posts",
       limit: 10,
       showTags: true,
+      sort: (a, b) => { return new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime()}, 
     }),
     // Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
