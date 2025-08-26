@@ -26,13 +26,13 @@ Find: max running time of computers
 Can we apply binary search in any way?
 I know it's biased, but if you have solved problems on binary search, you would know that it's better to test forcefully for binary search at first, as determining it would work or not won't take too much time. 
 
-The only thing needed for making sure that binary search can be put is to find monotonicity in some sense. Monotonicity is the property when for an increasing value the output of a function follows a pattern that can direct us during search. 
+The only thing needed for making sure that binary search can be used is to find the monotonic property in some sense. It is when, for an increasing value, the output of a function follows a pattern that can give direction during searching. 
 
-In this problem, when running time is 0, the computers will work. They keep on working when the running time is increased gradually until it reaches a certain value, say "max", after which the computers won't work anymore. So theres' the monotonicity, and binary search is apt.
+In this problem, when running time is 0, the computers will work. They keep on working when the running time is increased gradually until it reaches a certain value, say "max", after which the computers won't work anymore. So there's the monotonic property, and binary search is apt.
 
 #### CHECK FUNCTION
 
-If we could find if the computes could run for any specific running time, we can use binary search over it and quickly solve the problem.
+If we could find if the computers could run for any specific running time, we can use binary search over it and quickly solve the problem.
 
 So, the problem that remains is - 
 ```
@@ -45,7 +45,7 @@ Find: Can batteries power the computers for at least "t" minutes?
 
 
 ###### A perspective
-I want to introduce a certain visualization to aid my explanation as we go further.
+I want to introduce a certain visualisation to aid my explanation as we go further.
 ```
 Imagine a grid arrangement where
 - computers c0, c1, c2 ... are rows.
