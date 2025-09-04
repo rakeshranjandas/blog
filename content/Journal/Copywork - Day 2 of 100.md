@@ -13,6 +13,7 @@ date: 2025-09-02
 
 
 ### Summary
+
 ```
 Great Stories
 - are consistent and authentic
@@ -29,6 +30,7 @@ Great Stories
 The author speaks on about the fundamentals of great stories. They capture the senses of the audience by empathetic storytelling and being bold. It is important for them to come out of credible sources so that it is easy for people to trust on them. They are consistent. They are authentic to the point of compromising a larger audience for a niche set of interested people. Great stories make people feel safe and smart.
 
 ### How I felt
+
 - This post was well organised with short paragraphs. I attempted to memorise one paragraph at a time.
 - Reading as if you are giving speech certainly helps grabbing the emotions of the lines.
 - Often when I tried to write after memorising, I did not remember the exact phrases and when I made them out with my default style, I learned that there are lot of redundancy in my framing of sentences. e.g.
