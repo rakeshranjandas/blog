@@ -7,9 +7,8 @@ date: 2025-09-04
  
 # Advice For Authors
 
-**Author** - Seth Godin
-
-**Source** - https://seths.blog/2006/08/advice_for_auth/
+**Author** - Seth Godin  
+**Source** - https://seths.blog/2006/08/advice_for_auth/  
 
 
 ### Summary

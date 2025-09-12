@@ -7,9 +7,8 @@ date: 2025-09-02
  
 # How To Tell a Great Story
 
-**Author** - Seth Godin
-
-**Source** - https://seths.blog/2006/04/ode_how_to_tell/
+**Author** - Seth Godin  
+**Source** - https://seths.blog/2006/04/ode_how_to_tell/  
 
 
 ### Summary

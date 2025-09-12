@@ -6,10 +6,8 @@ date: 2025-09-01
 ---
 # Don't Shave The Yak
 
-**Author** - Seth Godin
-
-**Source** - https://seths.blog/2005/03/dont_shave_that/
-
+**Author** - Seth Godin  
+**Source** - https://seths.blog/2005/03/dont_shave_that/  
 ### Summary
 
 **Structure of the post**
