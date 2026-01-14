@@ -2,6 +2,8 @@
 draft: false
 tags:
   - dsa
+  - heaps
+  - median
 description: .
 date: 2025-09-11
 ---
@@ -17,8 +19,8 @@ Find all the medians of numbers a[0] to a[i], where "i" is from 0 to length(a)-1
 
 #### Median
 
-Median gives the idea of what's in the middle. 
-It's the middle element when the elements are arranged in sorted manner (doesn't matter increasing or decreasing, since middle is middle)  
+Median gives the idea of what's the middle value of a increasing set. 
+To find out median of a set, we can first sort it and then look at the value(s) present at the exact middle index(indices).
  - If there are total odd elements there is a single "middle", and that's the median  
 - If there are total even elements there are two "middle" elements. In that case the average of the two middle elements is the median.
 
@@ -32,7 +34,7 @@ e.g.
 
 One working approach is to always sort everything and then pick the middle index(indices) to find the median, every time a new element comes in.  
 The time complexity of that, if there are 'n' numbers in total, would be O($n*nlogn$) = O($n^{100}$)  
-It would pose a problem if 'n' is large, say $10^5$. Max computations could be as large as $10^{10}*log(10^5)$, which is infeasible.
+It is a problem when 'n' is large, say $10^5$. Max computations could be as large as $10^{10}*log(10^5)$, and that is infeasible.
 
 
 #### Optimised
@@ -232,17 +234,14 @@ Find all the medians of the sliding window.
 ```
 
 #### Problem with Heaps
-When a window slides through an array, on every slide, an element is removed and a new element is added. Logic for insertions and balancing are the same as before, heaps are good with them. The problem is delete, since heaps can remove only what's on the top.
+When a window slides through an array, on every slide, an element is removed and a new element is added to the window. Logic for insertions and balancing are the same as before, heaps are good with them. The problem is delete, since heaps can remove only what's on the top.
 
 For solving this problem of delete, a TreeSet(binary search tree) can be used. It supports deletion at the cost of $O(logn)$. 
 
-Another thing about TreeSet that should be kept in mind is that it cannot hold duplicate elements. For this, instead of using the 
-
-
 #### Walkthrough
-For the elements present in the window, create L and R subsets in the same way as before, but now containing indices instead of value.
+For the elements present in the window, create L and R sets in the same way as before, but now containing indices instead of value.
 
-When the window slides, find out in which subset the old index lied, remove from the subset, then balance. Then add the new index to L or R (based on Rule 1) and then balance again.
+When the window slides, find out in which one the old index is present, remove it, then balance. Then add the new index to L or R (based on Rule 1) and then balance again.
 
 After balancing, finding the medians is same as before.
 
@@ -342,3 +341,6 @@ TreeSets L and R take total of $O(n)$ extra space.
 >   An important thing to consider for TreeSet comparator.  
 >    If the comparator returns 0, then TreeSet detects that the element already exists and doesn't insert anymore.  
 >    We want indices to ALWAYS be inserted. Hence, if numbers at two indices are the same, then we tell that the lower index is smaller.
+
+
+

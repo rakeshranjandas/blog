@@ -2,6 +2,8 @@
 draft: false
 tags:
   - dsa
+  - greedy
+  - binarysearch
 description: .
 date: 2025-08-26
 ---
