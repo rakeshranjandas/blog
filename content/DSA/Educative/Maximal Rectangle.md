@@ -63,13 +63,13 @@ _(Picture) calculating stretch of bar from stretch of cells_
 So we'll maintain at each cell how far there is a streak of '1's on left and right. To keep the left boundary we'll iterate from left to right and save the last column where there was a '0' then '1'. For right boundary, we'll do the same by iterating from right to left. We'll use this to calculate the left and right boundary of the bars at each column. The left boundary of the bar would be the maximum of all left boundaries of the cells of the bar, the right boundary would be the minimum of all boundaries. 
 
 _Question: What would be the boundaries of a cell containing '0'?_
-	Keep it $-inf$ for left boundary and $+inf$ for right boundary. This is because the bar over the '0' will be having zero height so the area formed will automatically be zero. And also when we move to the next row, the left boundary of the cell of this row will become the left boundary of the bar as Math.max(-inf, x) = x
+	Keep it $-inf$ for left boundary and $+inf$ for right boundary. This is because the bar over the '0' will be having zero height so the area formed will automatically be zero. And also when we move to the next row, the left boundary of the cell of this row will become the left boundary of the bar as `Math.max(-inf, x) = x`
 
 #### Code and Complexity
 
 **Time complexity:**   $O(n*m)$
 
-**Space complexity**:  $O(m)$ for storing `histogram`, `leftBoundariesOfBar`, and `rightBoundariesOfBar`. 
+**Space complexity**:  $O(m)$ for storing `histogram`, `leftBoundariesOfBars`, and `rightBoundariesOfBars`. 
 
 > [!info]- Code (Maximal Rectangle)
 > ```

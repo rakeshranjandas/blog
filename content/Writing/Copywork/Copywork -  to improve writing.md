@@ -11,6 +11,6 @@ date: 2025-09-01
 
 2) Resources that made me to consider
 
-3) 100 day challenge
+3) 100 day challenge (Failed- Now I am just trying to produce 100 of such copyworks)
 
 4) Structure of daily copyworking

@@ -22,6 +22,11 @@ Problems from **Educative - Grokking the Coding Interview Patterns**
 - [[Max running time of N computers]]
 
 
+### 12. Greedy Techniques
+
+- Jump Game:
+
+
 ### 14. Dynamic Programming
 
 - [[Maximal Rectangle]]
