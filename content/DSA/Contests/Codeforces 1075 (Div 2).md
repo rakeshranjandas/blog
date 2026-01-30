@@ -100,9 +100,8 @@ Another perspective would be that all the numbers from `0` to `x-1` lies to one 
 With above reasoning, we can see that we cannot find `x` as MEX in any range when of the numbers from `0` to `x-1` some lie to left and some to right of `x` in the permutation.
 
 ```
-e.g.
 
-Can find MEX x = 3 - 
+Can find MEX x = 3
 	3 (1 0 2) 
 	(2 0 1) 3
 	
@@ -138,7 +137,9 @@ _ _ x _ _
 _ _ _  x _
 
 
-Notice that there are x numbers (o to x-1) and they have x-1 gaps between them. We can put 'x' in between those x-1 gaps
+Notice that there are x numbers (o to x-1).
+This means they have x-1 gaps between them.
+We can put 'x' in between those x-1 gaps
 ```
 
 
